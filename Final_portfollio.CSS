@@ -1,0 +1,242 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base body styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3efe7;
+  color: #3e3e3e;
+  line-height: 1.6;
+}
+
+/* ---------------- Header + Nav ---------------- */
+
+header {
+  background-color: #6b4f3b;
+  color: white;
+  padding: 40px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-left a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.nav-left a:hover {
+  text-decoration: underline;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Intro text below header */
+.intro {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #d6cfc7;
+}
+
+/* ---------------- Section Basics ---------------- */
+
+section {
+  padding: 100px 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* ---------------- About Me Section ---------------- */
+
+.about-section {
+  background-color: #e0d4c3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+}
+
+.about-photo {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+}
+
+.about-photo img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------- Projects Section ---------------- */
+
+.projects {
+  background-color: #c0b283;
+}
+
+/* project layout in blocks */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* Project display */
+.project-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #ede4d0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  width: 48%;
+  min-width: 320px;
+}
+
+/* Video container */
+.project-video {
+  padding: 20px 20px 10px;
+}
+
+.project-video video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Description */
+.project-description {
+  padding: 10px 20px 20px;
+  box-sizing: border-box;
+}
+
+.project-description h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #3e3e3e;
+}
+
+.project-description p {
+  font-size: 1rem;
+  color: #5a5242;
+}
+
+@media (max-width: 768px) {
+  .project-item {
+    width: 100%;
+  }
+}
+
+/* ---------------- Contact Section ---------------- */
+
+.contact-section {
+  background-color: #a07c5b;
+  color: white;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #555;
+}
+
+.contact-form button {
+  background-color: #4f3824;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #3c2819;
+}
+
+.contact-info {
+  text-align: center;
+  line-height: 2;
+}
+
+.social a {
+  color: #f0d9c1;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.social a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------- Footer ---------------- */
+
+footer {
+  background-color: #3c2f2f;
+  color: #eae0d5;
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 0.9rem;
+}
