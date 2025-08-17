@@ -20,7 +20,7 @@ body {
 /* ---------------- Header + Nav ---------------- */
 
 header {
-  background-color: #6b4f3b;
+  background-color: #523d35;
   color: white;
   padding: 40px 20px;
 }
@@ -69,7 +69,7 @@ nav {
 
 .intro p {
   font-size: 1.2rem;
-  color: #d6cfc7;
+  color: #e8d9cd;
 }
 
 /* ---------------- Section Basics ---------------- */
@@ -115,7 +115,7 @@ h2 {
 /* ---------------- Projects Section ---------------- */
 
 .projects {
-  background-color: #c0b283;
+  background-color: #959d90;
 }
 
 /* project layout in blocks */
@@ -131,7 +131,7 @@ h2 {
 .project-item {
   display: flex;
   flex-direction: column;
-  background-color: #ede4d0;
+  background-color: #e0d4c3;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -176,7 +176,7 @@ h2 {
 /* ---------------- Contact Section ---------------- */
 
 .contact-section {
-  background-color: #a07c5b;
+  background-color: #223030;
   color: white;
 }
 
